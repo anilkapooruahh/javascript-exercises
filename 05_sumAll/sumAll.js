@@ -1,9 +1,11 @@
 const sumAll = function(start, end) {
     const s = start < end ? start : end
     const e = end < start ? start : end
+    //Validating larger val
     if (typeof(s) !== 'number' || s < 0) {
         return 'ERROR'
     }
+    //Validating smaller val
     if (typeof(e) !== 'number' || e < 0) {
         return 'ERROR'
     }
